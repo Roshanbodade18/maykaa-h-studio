@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" role="img" aria-label="Kanchipuram silk saree">
+  <defs>
+    <linearGradient id="body" x1="0" x2="1">
+      <stop offset="0" stop-color="#701338"/>
+      <stop offset=".5" stop-color="#d91f5c"/>
+      <stop offset="1" stop-color="#83133d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#9c6418"/>
+      <stop offset=".5" stop-color="#ffd66e"/>
+      <stop offset="1" stop-color="#8e5514"/>
+    </linearGradient>
+    <pattern id="dots" width="48" height="48" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="20" r="5" fill="#ffd66e" opacity=".9"/>
+    </pattern>
+  </defs>
+  <rect width="720" height="620" fill="#121c2d"/>
+  <path d="M176 118h325c58 54 72 126 42 216-32 96-29 159 9 189H192c-41-56-44-131-10-226 25-70 23-130-6-179Z" fill="url(#body)"/>
+  <path d="M176 118h325v78H176Z" fill="url(#gold)"/>
+  <path d="M188 438h361v85H188Z" fill="url(#gold)"/>
+  <rect x="198" y="214" width="310" height="214" fill="url(#dots)" opacity=".7"/>
+  <path d="M238 158h200M230 480h252" stroke="#74210c" stroke-width="12" stroke-linecap="round" opacity=".55"/>
+</svg>

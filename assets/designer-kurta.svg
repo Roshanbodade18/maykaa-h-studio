@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" role="img" aria-label="Designer kurta">
+  <rect width="720" height="620" fill="#f3e4c0"/>
+  <path d="M244 128c45 38 187 38 232 0l59 95-54 57v218H239V280l-54-57Z" fill="#101a2a"/>
+  <path d="M309 128c21 35 81 35 102 0" fill="none" stroke="#cda13c" stroke-width="17" stroke-linecap="round"/>
+  <path d="M291 213h138M292 270h137M294 327h133" stroke="#f4d26d" stroke-width="13" stroke-linecap="round"/>
+  <path d="M257 168c25 98 26 208 3 330M463 168c-25 98-26 208-3 330" stroke="#9d174d" stroke-width="11" opacity=".8"/>
+  <circle cx="360" cy="383" r="24" fill="#9d174d"/>
+  <circle cx="360" cy="383" r="9" fill="#f4d26d"/>
+</svg>

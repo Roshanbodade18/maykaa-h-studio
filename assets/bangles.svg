@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="Stacked enamel bangles">
+  <rect width="640" height="520" fill="#f3eadc"/>
+  <g fill="none" stroke-linecap="round">
+    <circle cx="286" cy="245" r="98" stroke="#c7533d" stroke-width="30"/>
+    <circle cx="354" cy="245" r="98" stroke="#155d62" stroke-width="30"/>
+    <circle cx="320" cy="305" r="98" stroke="#d9aa4d" stroke-width="30"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="Enamel statement earrings">
+  <rect width="640" height="520" fill="#efe7d8"/>
+  <circle cx="226" cy="128" r="28" fill="#161616"/>
+  <circle cx="414" cy="128" r="28" fill="#161616"/>
+  <path d="M226 162c58 58 55 137-8 193-54-63-50-139 8-193Z" fill="#fff6e6" stroke="#161616" stroke-width="12"/>
+  <path d="M414 162c58 58 55 137-8 193-54-63-50-139 8-193Z" fill="#fff6e6" stroke="#161616" stroke-width="12"/>
+  <circle cx="226" cy="224" r="24" fill="#c94e3c"/>
+  <circle cx="414" cy="224" r="24" fill="#c94e3c"/>
+  <circle cx="216" cy="294" r="30" fill="#155d62"/>
+  <circle cx="404" cy="294" r="30" fill="#155d62"/>
+</svg>

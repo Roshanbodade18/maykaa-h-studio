@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="Block printed studio tote">
+  <rect width="640" height="520" fill="#f3eadc"/>
+  <path d="M197 178c18-92 228-92 246 0" fill="none" stroke="#1a1a1a" stroke-width="22" stroke-linecap="round"/>
+  <rect x="150" y="170" width="340" height="260" rx="20" fill="#fff7ea"/>
+  <path d="M196 214h248M196 260h248M196 306h248M196 352h248" stroke="#155d62" stroke-width="13" opacity=".75"/>
+  <circle cx="228" cy="236" r="19" fill="#c7533d"/>
+  <circle cx="320" cy="282" r="19" fill="#d9aa4d"/>
+  <circle cx="412" cy="328" r="19" fill="#c7533d"/>
+</svg>

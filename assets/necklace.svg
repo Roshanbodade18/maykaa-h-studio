@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="Sculptural brass necklace">
+  <rect width="640" height="520" fill="#f4eadc"/>
+  <ellipse cx="320" cy="286" rx="208" ry="150" fill="#fff9ef"/>
+  <path d="M174 264c43-128 248-128 292 0" fill="none" stroke="#191919" stroke-width="18" stroke-linecap="round"/>
+  <path d="M204 287c34-94 198-94 232 0" fill="none" stroke="#c58a2d" stroke-width="28" stroke-linecap="round"/>
+  <circle cx="320" cy="307" r="56" fill="#d34f3d"/>
+  <circle cx="320" cy="307" r="25" fill="#f2c864"/>
+  <circle cx="235" cy="280" r="24" fill="#155d62"/>
+  <circle cx="405" cy="280" r="24" fill="#155d62"/>
+</svg>

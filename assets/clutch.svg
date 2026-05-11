@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="Handwoven clutch bag">
+  <defs>
+    <pattern id="weave" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(24)">
+      <rect width="34" height="34" fill="#8e5842"/>
+      <path d="M0 9h34M0 25h34" stroke="#dba977" stroke-width="8" opacity=".55"/>
+      <path d="M8 0v34M25 0v34" stroke="#4e2f2a" stroke-width="5" opacity=".5"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="520" fill="#dce9e8"/>
+  <rect x="132" y="150" width="376" height="260" rx="22" fill="url(#weave)"/>
+  <rect x="172" y="190" width="296" height="180" rx="15" fill="none" stroke="#f3d58c" stroke-width="12"/>
+  <path d="M234 150c18-82 154-82 172 0" fill="none" stroke="#4b2f27" stroke-width="24" stroke-linecap="round"/>
+</svg>

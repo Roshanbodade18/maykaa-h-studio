@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Designer accessory collection</title>
+  <desc id="desc">An editorial arrangement of sculptural jewellery, a woven clutch, enamel bangles, and leather accessories.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5efe5"/>
+      <stop offset="0.48" stop-color="#e8d4bf"/>
+      <stop offset="1" stop-color="#c7dde0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#bd8731"/>
+      <stop offset="0.5" stop-color="#f2d37e"/>
+      <stop offset="1" stop-color="#9c641f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="26" stdDeviation="20" flood-color="#523f32" flood-opacity=".22"/>
+    </filter>
+    <pattern id="weave" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <rect width="34" height="34" fill="#9a6046"/>
+      <path d="M0 8h34M0 25h34" stroke="#d5a16f" stroke-width="8" opacity=".5"/>
+      <path d="M8 0v34M25 0v34" stroke="#5e332d" stroke-width="5" opacity=".45"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <path d="M72 642C236 544 339 613 474 520c128-88 143-248 327-276 128-19 236 36 330-58v574H72Z" fill="#144d53" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <rect x="630" y="286" width="320" height="238" rx="18" fill="url(#weave)"/>
+    <rect x="662" y="318" width="256" height="174" rx="12" fill="none" stroke="#f7d58e" stroke-width="10" opacity=".7"/>
+    <path d="M730 286c20-82 128-82 146 0" fill="none" stroke="#4d3028" stroke-width="22" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#shadow)">
+    <ellipse cx="390" cy="478" rx="166" ry="116" fill="#f8f4ed"/>
+    <ellipse cx="390" cy="478" rx="104" ry="70" fill="#d35840" opacity=".18"/>
+    <path d="M286 478c40-68 165-70 208 0-43 70-168 68-208 0Z" fill="none" stroke="url(#gold)" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="390" cy="478" r="38" fill="#f0c558"/>
+    <circle cx="390" cy="478" r="19" fill="#144d53"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M694 139c75 72 70 169-10 234-67-80-62-174 10-234Z" fill="#f5f0e8"/>
+    <path d="M694 139c75 72 70 169-10 234" fill="none" stroke="#232323" stroke-width="10"/>
+    <circle cx="698" cy="214" r="21" fill="#c74736"/>
+    <circle cx="687" cy="289" r="26" fill="#144d53"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M198 178c73-76 201-26 205 82 3 94-90 155-169 107-75-45-96-126-36-189Z" fill="#1f615f"/>
+    <path d="M214 214c53-49 139-18 144 51 5 63-58 101-112 72-51-28-76-82-32-123Z" fill="#f0d99d"/>
+    <path d="M251 237c28-23 74-7 76 30 2 34-31 55-61 39-29-15-39-49-15-69Z" fill="#cf563a"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="846" y="106" width="168" height="430" rx="84" fill="#181a1a"/>
+    <rect x="884" y="154" width="92" height="332" rx="46" fill="#c8bca7"/>
+    <path d="M896 192h68M891 236h78M887 280h86M889 324h82M895 368h70M902 412h56" stroke="#181a1a" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke-linecap="round" filter="url(#shadow)">
+    <circle cx="530" cy="195" r="58" stroke="#d9a84e" stroke-width="20"/>
+    <circle cx="584" cy="252" r="58" stroke="#144d53" stroke-width="20"/>
+    <circle cx="477" cy="253" r="58" stroke="#bd4f3b" stroke-width="20"/>
+  </g>
+</svg>

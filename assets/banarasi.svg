@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" role="img" aria-label="Banarasi silk saree">
+  <defs>
+    <linearGradient id="purple" x1="0" x2="1">
+      <stop offset="0" stop-color="#351147"/>
+      <stop offset=".48" stop-color="#7b205b"/>
+      <stop offset="1" stop-color="#230d35"/>
+    </linearGradient>
+    <pattern id="jari" width="62" height="62" patternUnits="userSpaceOnUse">
+      <path d="M17 42c11-17 19-17 31 0-12 10-21 10-31 0Z" fill="#e7b84a"/>
+      <path d="M31 15v22" stroke="#f8dd8c" stroke-width="4" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+  <rect width="720" height="620" fill="#101827"/>
+  <path d="M160 112h382c-47 96-39 180 24 253 44 51 46 96 6 135H163c51-74 58-143 22-208-34-61-42-121-25-180Z" fill="url(#purple)"/>
+  <rect x="196" y="140" width="310" height="312" fill="url(#jari)" opacity=".85"/>
+  <path d="M160 112h382M166 500h406" stroke="#e7b84a" stroke-width="38"/>
+  <path d="M217 112c-33 127-23 256 31 388M486 112c-31 127-20 256 34 388" stroke="#f4d77d" stroke-width="10" opacity=".72"/>
+</svg>
