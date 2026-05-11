@@ -3,164 +3,231 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>मायkaa by H Studio | Designer Sarees & Kurtas</title>
+    <title>मायkaa by H Studio | Saree E-commerce</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="page-glow" aria-hidden="true"></div>
-    <header class="site-header">
-      <a class="brand magnetic" href="#top" aria-label="मायkaa home">
-        <span class="brand-mark">H</span>
-        <span class="brand-word">मायkaa</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#shop">Collections</a>
-        <a href="#about">About</a>
-        <a href="#craft">Craft</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="cart-button magnetic" type="button" aria-label="Open cart">
-        <span>Cart</span>
-        <strong id="cartCount">0</strong>
-      </button>
-    </header>
+    <div class="app-shell">
+      <header class="navbar">
+        <a class="brand" href="#home" aria-label="Maykaa home">
+          <span class="brand-mark">म</span>
+          <span>मायkaa</span>
+        </a>
+        <form class="search" id="searchForm">
+          <input id="searchInput" type="search" placeholder="Search Kanchipuram, Banarasi, cotton..." aria-label="Search products">
+          <button type="submit">Search</button>
+        </form>
+        <nav>
+          <a href="#shop">Shop</a>
+          <a href="#bestsellers">Bestsellers</a>
+          <button id="ordersButton" type="button">Orders</button>
+          <button id="accountButton" type="button">Login</button>
+          <button class="cart-trigger" id="cartButton" type="button">Cart <span id="cartCount">0</span></button>
+        </nav>
+      </header>
 
-    <main id="top">
-      <section class="hero reveal">
-        <div class="hero-copy">
-          <p class="eyebrow shimmer">NIFT designer edit</p>
-          <h1><span>Authentic Indian</span> sarees and kurtas with a couture finish.</h1>
-          <p>Heritage weaves, ceremonial silk, and designer kurtas curated for women who want Indian craft to feel modern, premium, and unforgettable.</p>
-          <div class="hero-actions">
-            <a class="button primary magnetic" href="#shop">Shop the edit</a>
-            <a class="button secondary magnetic" href="#about">Meet the designer</a>
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">National designer saree edit</p>
+            <h1>Premium Indian sarees curated for weddings, festivals, and everyday elegance.</h1>
+            <p>Shop Kanchipuram silk, Paithani weaves, Banarasi classics, Madhurai cottons, and Pan India designer sarees with a refined e-commerce experience.</p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#shop">Explore collection</a>
+              <button class="ghost-btn" id="heroLoginButton" type="button">Create account</button>
+            </div>
           </div>
-        </div>
-        <div class="hero-media">
-          <img class="hero-image" src="assets/hero-maykaa.svg" alt="Premium Indian sarees and designer kurta collection">
-          <div class="floating-card one">
-            <span>Handpicked</span>
-            <strong>Silk drops</strong>
+          <div class="hero-panel reveal">
+            <img src="assets/hero-maykaa.svg" alt="Premium Indian saree collection">
+            <div class="hero-stat">
+              <strong>16</strong>
+              <span>live products</span>
+            </div>
           </div>
-          <div class="floating-card two">
-            <span>National</span>
-            <strong>Designer mood</strong>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="marquee" aria-label="Collection highlights">
+        <section class="feature-strip reveal" aria-label="Store highlights">
+          <span>OTP signup</span>
+          <span>Secure checkout</span>
+          <span>Order history</span>
+          <span>SMS-ready backend</span>
+        </section>
+
+        <section class="collection-tabs reveal" aria-label="Featured collections">
+          <button class="collection-tab active" data-quick-region="All">All Sarees</button>
+          <button class="collection-tab" data-quick-region="Kanchipuram">Kanchipuram</button>
+          <button class="collection-tab" data-quick-region="Paithani">Paithani</button>
+          <button class="collection-tab" data-quick-region="Banarasi">Banarasi</button>
+          <button class="collection-tab" data-quick-region="Madhurai">Madhurai</button>
+          <button class="collection-tab" data-quick-region="Pan India">Pan India</button>
+        </section>
+
+        <section class="store-section" id="shop">
+          <aside class="filters-panel reveal" aria-label="Filters">
+            <div class="filters-head">
+              <h2>Filters</h2>
+              <button id="clearFilters" type="button">Clear</button>
+            </div>
+            <div id="filterGroups"></div>
+          </aside>
+
+          <section class="products-area">
+            <div class="store-toolbar reveal">
+              <div>
+                <p class="eyebrow">Shop sarees</p>
+                <h2 id="resultTitle">All designer sarees</h2>
+                <p id="resultCount">Loading products...</p>
+              </div>
+              <label>
+                Sort by
+                <select id="sortSelect">
+                  <option value="popularity">Popularity</option>
+                  <option value="newest">Newest First</option>
+                  <option value="price-low">Price Low to High</option>
+                  <option value="price-high">Price High to Low</option>
+                  <option value="rating">Customer Rating</option>
+                </select>
+              </label>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+          </section>
+        </section>
+
+        <section class="editorial-section reveal" id="bestsellers">
+          <div>
+            <p class="eyebrow">Designer confidence</p>
+            <h2>Built for customers who compare fabric, price, rating, and occasion before buying.</h2>
+          </div>
+          <div class="editorial-cards">
+            <article>
+              <span>01</span>
+              <h3>Smart filters</h3>
+              <p>Region, fabric, price range, rating, availability, occasion, brand, and dynamic sorting.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Protected checkout</h3>
+              <p>Users browse freely, but login is required for checkout and order history.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Payment-ready</h3>
+              <p>Demo payment flow is live, with Razorpay environment hooks ready for production keys.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="testimonials reveal">
+          <p class="eyebrow">Customer notes</p>
+          <h2>Premium details that feel trustworthy before the first order.</h2>
+          <div class="testimonial-grid">
+            <blockquote>“The filtering feels like a serious saree store. I can find wedding and daily-wear sarees quickly.”</blockquote>
+            <blockquote>“The cart, checkout, and order history make the brand feel launch-ready.”</blockquote>
+            <blockquote>“The product photos from the actual collection make the site much more credible.”</blockquote>
+          </div>
+        </section>
+      </main>
+
+      <footer>
         <div>
-          <span>Kanchipuram Silk</span>
-          <span>Paithani Weaves</span>
-          <span>Banarasi Silk</span>
-          <span>Designer Kurtas</span>
-          <span>Festive Ready</span>
-          <span>Premium Finish</span>
+          <p class="footer-brand">मायkaa</p>
+          <p>Authentic Indian sarees celebrating heritage with modern elegance.</p>
         </div>
-      </section>
-
-      <section class="trust-strip reveal" aria-label="Studio highlights">
-        <span>NIFT sensibility</span>
-        <span>Heritage craft</span>
-        <span>Curated drops</span>
-        <span>Ships across India</span>
-      </section>
-
-      <section class="section-heading reveal" id="shop">
-        <p class="eyebrow shimmer">Collections</p>
-        <h2>Products designed to feel collectible from the first glance.</h2>
-      </section>
-
-      <section class="shop-layout reveal" aria-label="Product catalogue">
-        <aside class="filters glass" aria-label="Shop filters">
-          <h3>Refine</h3>
-          <button class="filter active magnetic" type="button" data-filter="all">All</button>
-          <button class="filter magnetic" type="button" data-filter="sarees">Sarees</button>
-          <button class="filter magnetic" type="button" data-filter="kurtas">Kurtas</button>
-          <button class="filter magnetic" type="button" data-filter="silk">Silk</button>
-          <label class="toggle">
-            <input id="limitedToggle" type="checkbox">
-            <span>Signature pieces only</span>
-          </label>
-        </aside>
-        <div class="product-grid" id="productGrid"></div>
-      </section>
-
-      <section class="about reveal" id="about">
         <div>
-          <p class="eyebrow shimmer">About the label</p>
-          <h2>मायkaa celebrates heritage with modern elegance.</h2>
+          <h3>Policies</h3>
+          <a href="#shop">Privacy Policy</a>
+          <a href="#shop">Terms & Conditions</a>
+          <a href="#shop">Shipping Info</a>
+          <a href="#shop">Returns</a>
         </div>
-        <div class="about-copy">
-          <p>Created by H Studio, the label brings a National Institute of Fashion Technology design eye to authentic Indian sarees and kurtas. Every collection balances traditional textile identity with clean styling, premium presentation, and a confident contemporary mood.</p>
-          <p>Think Kanchipuram silk for ceremony, Paithani weaves for heirloom color, Banarasi silk for luminous detail, and designer kurtas for refined everyday occasions.</p>
-        </div>
-      </section>
+        <form id="newsletterForm">
+          <h3>Newsletter</h3>
+          <p>Subscribe for exclusive offers and updates.</p>
+          <input id="newsletterEmail" type="email" placeholder="Your email" required>
+          <button class="primary-btn" type="submit">Subscribe</button>
+          <small id="newsletterMessage"></small>
+        </form>
+      </footer>
+    </div>
 
-      <section class="craft" id="craft">
-        <article class="reveal">
-          <span>01</span>
-          <h3>Textile-first curation</h3>
-          <p>The fabric leads the design language: border, fall, motif scale, drape, and color are selected before styling begins.</p>
-        </article>
-        <article class="reveal">
-          <span>02</span>
-          <h3>Premium product staging</h3>
-          <p>Each product is presented like a designer drop, with confident naming, collection notes, and editorial commerce details.</p>
-        </article>
-        <article class="reveal">
-          <span>03</span>
-          <h3>Ready to publish</h3>
-          <p>The website includes a backend for products, order requests, and newsletter subscriptions so it can move toward launch.</p>
-        </article>
-      </section>
-    </main>
-
-    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
-      <div class="cart-panel">
-        <div class="cart-head">
-          <h2>Your cart</h2>
-          <button class="icon-button magnetic" id="closeCart" type="button" aria-label="Close cart">x</button>
+    <aside class="drawer" id="cartDrawer" aria-hidden="true">
+      <div class="drawer-panel">
+        <div class="drawer-head">
+          <h2>Your Cart</h2>
+          <button class="icon-btn" data-close-cart type="button">x</button>
         </div>
-        <div id="cartItems" class="cart-items"></div>
-        <div class="cart-total">
-          <span>Total</span>
-          <strong id="cartTotal">Rs. 0</strong>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="coupon-row">
+          <input id="couponInput" placeholder="Coupon code: MAYKAA10">
+          <button id="applyCoupon" type="button">Apply</button>
         </div>
-        <button class="checkout magnetic" id="checkoutButton" type="button">Request checkout</button>
-        <p class="cart-note" id="checkoutNote"></p>
+        <div class="price-box" id="cartSummary"></div>
+        <div class="drawer-actions">
+          <button class="ghost-btn" id="clearCart" type="button">Clear cart</button>
+          <button class="primary-btn" id="checkoutStart" type="button">Checkout</button>
+        </div>
       </div>
     </aside>
 
-    <footer id="contact">
-      <div>
-        <p class="footer-brand">मायkaa</p>
-        <p>Authentic Indian sarees and kurtas, celebrating heritage with modern elegance.</p>
+    <section class="modal" id="authModal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="icon-btn modal-close" data-close-modal type="button">x</button>
+        <div class="modal-copy">
+          <p class="eyebrow">Secure account</p>
+          <h2 id="authTitle">Login to continue</h2>
+          <p id="authHint">Browse freely. Login is required for checkout, account, and order history.</p>
+        </div>
+        <div class="auth-tabs">
+          <button class="active" data-auth-mode="login" type="button">Login</button>
+          <button data-auth-mode="signup" type="button">Signup</button>
+          <button data-auth-mode="forgot" type="button">Forgot</button>
+        </div>
+        <form id="loginForm" class="auth-form">
+          <input name="mobile" inputmode="numeric" placeholder="Mobile number" required>
+          <input name="password" type="password" placeholder="Password" required>
+          <button class="primary-btn" type="submit">Login</button>
+        </form>
+        <form id="otpForm" class="auth-form hidden">
+          <input name="name" placeholder="Full name">
+          <input name="mobile" inputmode="numeric" placeholder="Mobile number" required>
+          <button class="primary-btn" type="submit">Send OTP</button>
+        </form>
+        <form id="verifyForm" class="auth-form hidden">
+          <input name="otp" inputmode="numeric" placeholder="Enter OTP" required>
+          <input name="password" type="password" placeholder="Create new password" required>
+          <button class="primary-btn" type="submit">Verify & Continue</button>
+        </form>
+        <p class="form-note" id="authMessage"></p>
       </div>
-      <div>
-        <h3>Quick Links</h3>
-        <a href="#about">About Us</a>
-        <a href="#shop">Privacy Policy</a>
-        <a href="#shop">Terms & Conditions</a>
-        <a href="#shop">Shipping Info</a>
+    </section>
+
+    <section class="modal" id="quickViewModal" aria-hidden="true">
+      <div class="modal-card quick-card">
+        <button class="icon-btn modal-close" data-close-modal type="button">x</button>
+        <div id="quickViewContent"></div>
       </div>
-      <div>
-        <h3>Collections</h3>
-        <a href="#shop">Kanchipuram Silk</a>
-        <a href="#shop">Paithani Weaves</a>
-        <a href="#shop">Banarasi Silk</a>
-        <a href="#shop">Designer Kurtas</a>
+    </section>
+
+    <section class="modal" id="checkoutModal" aria-hidden="true">
+      <div class="modal-card checkout-card">
+        <button class="icon-btn modal-close" data-close-modal type="button">x</button>
+        <div class="checkout-progress" id="checkoutProgress">
+          <span class="active">Cart</span>
+          <span>Address</span>
+          <span>Payment</span>
+          <span>Confirm</span>
+        </div>
+        <div id="checkoutContent"></div>
       </div>
-      <form class="newsletter" id="newsletterForm">
-        <h3>Newsletter</h3>
-        <p>Subscribe for exclusive offers and updates</p>
-        <label class="sr-only" for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="Your email" required>
-        <button class="subscribe magnetic" type="submit">Subscribe</button>
-        <small id="newsletterMessage"></small>
-      </form>
-    </footer>
+    </section>
+
+    <section class="modal" id="ordersModal" aria-hidden="true">
+      <div class="modal-card orders-card">
+        <button class="icon-btn modal-close" data-close-modal type="button">x</button>
+        <h2>Order History</h2>
+        <div id="ordersContent"></div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>

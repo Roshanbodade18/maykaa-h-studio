@@ -1,4 +1,11 @@
-data/
+data/users.json
+data/orders.json
+data/otps.json
+data/sessions.json
+data/payments.json
+data/newsletter.json
+data/sms-log.json
+data/*.jsonl
 *.out
 *.err
 node_modules/
